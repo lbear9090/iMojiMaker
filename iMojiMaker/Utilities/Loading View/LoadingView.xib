@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="bpQ-1O-VMC" customClass="LoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWm-3N-scb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0p-Bf-peo">
+                    <rect key="frame" x="145.5" y="308.5" width="84" height="51.5"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="gzZ-p8-Lcd">
+                            <rect key="frame" x="32" y="0.0" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXx-Q1-REq">
+                            <rect key="frame" x="0.0" y="30" width="84" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TXx-Q1-REq" secondAttribute="bottom" id="7br-K5-6LD"/>
+                        <constraint firstItem="gzZ-p8-Lcd" firstAttribute="centerX" secondItem="O0p-Bf-peo" secondAttribute="centerX" id="HgQ-Ex-KbS"/>
+                        <constraint firstItem="TXx-Q1-REq" firstAttribute="centerX" secondItem="O0p-Bf-peo" secondAttribute="centerX" id="dSm-g5-q9G"/>
+                        <constraint firstItem="gzZ-p8-Lcd" firstAttribute="top" secondItem="O0p-Bf-peo" secondAttribute="top" id="f0F-qO-rre"/>
+                        <constraint firstItem="TXx-Q1-REq" firstAttribute="top" secondItem="gzZ-p8-Lcd" secondAttribute="bottom" constant="10" id="fy1-1G-Bq2"/>
+                        <constraint firstItem="TXx-Q1-REq" firstAttribute="leading" secondItem="O0p-Bf-peo" secondAttribute="leading" id="pHG-cm-iQu"/>
+                        <constraint firstAttribute="trailing" secondItem="TXx-Q1-REq" secondAttribute="trailing" id="u2S-Q8-zkK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="xWm-3N-scb" firstAttribute="leading" secondItem="bpQ-1O-VMC" secondAttribute="leading" id="9NA-jM-pQY"/>
+                <constraint firstItem="xWm-3N-scb" firstAttribute="top" secondItem="bpQ-1O-VMC" secondAttribute="top" id="VTe-wc-UJn"/>
+                <constraint firstItem="O0p-Bf-peo" firstAttribute="centerX" secondItem="bpQ-1O-VMC" secondAttribute="centerX" id="Z4U-rV-GUs"/>
+                <constraint firstAttribute="trailing" secondItem="xWm-3N-scb" secondAttribute="trailing" id="cKZ-SB-kIG"/>
+                <constraint firstAttribute="bottom" secondItem="xWm-3N-scb" secondAttribute="bottom" id="dfM-8e-Gxq"/>
+                <constraint firstItem="O0p-Bf-peo" firstAttribute="centerY" secondItem="bpQ-1O-VMC" secondAttribute="centerY" id="doo-vH-irL"/>
+            </constraints>
+            <point key="canvasLocation" x="-36.5" y="2.5"/>
+        </view>
+    </objects>
+</document>

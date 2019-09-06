@@ -1,0 +1,6 @@
+framework module AdMobServices {
+  umbrella header "AdMobServices.h"
+
+  export *
+  module * { export * }
+}
